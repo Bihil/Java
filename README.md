@@ -1,2 +1,2 @@
 # Java
-All about java 
+All tutorials and projects concerning about Java.

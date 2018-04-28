@@ -1,5 +1,5 @@
 
-public class test {
+public class test extends AddStrings{
 
 	public static void main(String[] args) {
 

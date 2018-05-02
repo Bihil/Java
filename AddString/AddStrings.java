@@ -1,11 +1,14 @@
 
 public class AddStrings implements Add {
-	static String argument1, argument2;
-	
+	private String var1, var2;
+
+	public AddStrings(String variable1, String variable2) {
+		this.var1=variable1;
+		this.var2=variable2;
+	}
+	@Override
 	public int sum() {	
-		validate(argument1);
-		validate(argument2);		
-		return Integer.parseInt(argument1) + Integer.parseInt(argument2);
+		return Integer.parseInt(this.var1) + Integer.parseInt(this.var2);
 	}
 
 }

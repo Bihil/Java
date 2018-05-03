@@ -6,7 +6,6 @@ public class AddStrings implements Add {
 		this.var1=variable1;
 		this.var2=variable2;
 	}
-	@Override
 	public int sum() {	
 		return Integer.parseInt(this.var1) + Integer.parseInt(this.var2);
 	}

@@ -5,8 +5,6 @@ public class AddNumbers implements Add {
 		this.var1 = variable1;
 		this.var2 = variable2;
 	}	
-
-	@Override
 	public int sum(){		
 		return this.var1 +this.var2;
 	}	

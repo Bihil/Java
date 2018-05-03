@@ -32,8 +32,10 @@ public class test {
 		} else {
 			validate(args[0]);
 			validate(args[1]);
-			System.out.println(new AddStrings(args[0], args[1]).sum());
-			System.out.println(new AddNumbers(Integer.parseInt(args[0]),Integer.parseInt(args[1])).sum());
+			Add numberAddition = new AddNumbers(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
+			Add stringAddition = new AddStrings(args[0], args[1]);
+			System.out.println(numberAddition.sum());
+			System.out.println(stringAddition.sum());
 		}	
 	}
 

@@ -1,12 +1,18 @@
 
 public class test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InstantiationException, IllegalAccessException {
 
-		Manuplate<String> stringHandler = AddEnum.getHandler(String.class);
-		Manuplate<Integer> intHandler = AddEnum.getHandler(Integer.class);
+        AddEnum.registerDataType(String.class, AddString.class);
+        AddEnum.registerDataType(Integer.class, AddInt.class);
 
-		System.out.println(stringHandler.add("100", "3"));
+        Manuplate<String> stringhandler = AddEnum.getHandler(String.class);
+        Manuplate<Integer> intHandler = AddEnum.getHandler(Integer.class);
+
+		//Manuplate<String> stringHandler = AddEnum.getHandler(String.class);
+		//Manuplate<Integer> intHandler = AddEnum.getHandler(Integer.class);
+
+		System.out.println(stringhandler.add("100", "3"));
 		System.out.println(intHandler.add(5, 7));
 	}
 
